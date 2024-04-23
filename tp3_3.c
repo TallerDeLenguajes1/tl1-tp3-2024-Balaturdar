@@ -28,6 +28,11 @@ int main()
         puts(nombres[i]);
     }
     
+    for (int i = 0; i < CANTNOMBRES; i++)
+    {
+        free(nombres[i]);
+    }
+    
     
     free(nombres);
     free(buff);
