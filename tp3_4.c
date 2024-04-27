@@ -23,8 +23,8 @@ void cargaClientes(cliente *clientes, int cantClientes){
     {
         clientes->ClienteID = i+1;
         
-        printf("\n Ingrese el nombre del cliente: ");
         fflush(stdin);
+        printf("\n Ingrese el nombre del cliente: ");
         gets(buff);
         clientes[i].NombreCliente = (char *)malloc((strlen(buff)+1)*sizeof(char));
         strcpy(clientes->NombreCliente, buff);
